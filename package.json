@@ -1,0 +1,19 @@
+{
+  "name": "llmtrader-cre",
+  "version": "0.1.0",
+  "main": "dist/main.js",
+  "private": true,
+  "scripts": {
+    "postinstall": "bun x cre-setup",
+    "test": "bun test"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@chainlink/cre-sdk": "^1.4.0",
+    "viem": "^2.31.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/bun": "1.2.21"
+  }
+}

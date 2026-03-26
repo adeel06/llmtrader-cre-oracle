@@ -1,0 +1,89 @@
+{
+  "schedule": "0 */5 * * * *",
+  "coinGeckoBaseUrl": "https://api.coingecko.com/api/v3/simple/price",
+  "quoteCurrencies": "usd,usdc",
+  "tokens": {
+    "bitcoin": "BTC",
+    "ethereum": "ETH",
+    "solana": "SOL",
+    "avalanche-2": "AVAX",
+    "chainlink": "LINK",
+    "dogecoin": "DOGE",
+    "cardano": "ADA",
+    "polkadot": "DOT",
+    "matic-network": "POL",
+    "ripple": "XRP",
+    "sui": "SUI",
+    "arbitrum": "ARB",
+    "optimism": "OP",
+    "near": "NEAR",
+    "aptos": "APT",
+    "uniswap": "UNI",
+    "aave": "AAVE",
+    "litecoin": "LTC",
+    "cosmos": "ATOM",
+    "filecoin": "FIL",
+    "injective-protocol": "INJ",
+    "sei-network": "SEI",
+    "celestia": "TIA",
+    "render-token": "RENDER",
+    "artificial-superintelligence-alliance": "FET",
+    "blockstack": "STX",
+    "pepe": "PEPE",
+    "dogwifcoin": "WIF",
+    "jupiter-exchange-solana": "JUP",
+    "bonk": "BONK"
+  },
+  "providers": [
+    {
+      "name": "anthropic/claude-opus-4.6",
+      "model": "claude-opus-4-6",
+      "url": "https://api.anthropic.com/v1/messages",
+      "secretKey": "ANTHROPIC_API_KEY",
+      "type": "anthropic"
+    },
+    {
+      "name": "deepseek/deepseek-chat-v4",
+      "model": "deepseek-chat",
+      "url": "https://api.deepseek.com/v1/chat/completions",
+      "secretKey": "DEEPSEEK_API_KEY",
+      "type": "openai_compat"
+    },
+    {
+      "name": "alibaba_cloud/qwen3.5-397b-a17b",
+      "model": "qwen-max",
+      "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+      "secretKey": "ALIBABACLOUD_API_KEY",
+      "type": "openai_compat"
+    },
+    {
+      "name": "google/gemini-2.5-pro",
+      "model": "gemini-2.5-pro",
+      "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent",
+      "secretKey": "GOOGLE_API_KEY",
+      "type": "google"
+    },
+    {
+      "name": "groq/llama-4-scout",
+      "model": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "url": "https://api.groq.com/openai/v1/chat/completions",
+      "secretKey": "GROQ_API_KEY",
+      "type": "openai_compat"
+    },
+    {
+      "name": "xai/grok-3",
+      "model": "grok-3",
+      "url": "https://api.x.ai/v1/chat/completions",
+      "secretKey": "XAI_API_KEY",
+      "type": "openai_compat"
+    }
+  ],
+  "evms": [
+    {
+      "oracleAddress": "${ORACLE_ADDRESS_SEPOLIA}",
+      "chainSelectorName": "ethereum-testnet-sepolia",
+      "gasLimit": "500000",
+      "isTestnet": true
+    }
+  ]
+}
